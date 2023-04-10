@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* !Halaman 1 (paling atas, terdiri dari judul teks dan search bar */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Image/HeaderRill.svg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*? Navigasi Bar */
+nav {
+    display: flex;
+    padding: 5px 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #718B73;
+}
+
+nav img {
+    width: 30px;
+    text-align: center;
+}
+
+.nav_links {
+    /* display: flex; */
+    flex: 1;
+    text-align: left;
+}
+
+.nav_links ul,
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+
+.nav_links ul,
+li,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after {
+    content: '';
+    width: 0%;
+    height: 10px;
+    /* background: #374C3B; */
+    background-color: blue;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links ul li:hover::after {
+    width: 100%;
+}
+
+.nav_links2 ul li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #374C3B;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links2 ul li:hover::after {
+    width: 100%;
+}
+
+
+/*? Judul Page */
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 70px;
+    font-style: italic;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 30px;
+
+}
+
+/*? -----SEARCH BAR-------- */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 360px;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    border-radius: 5%;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60;
+    padding: 10px 20 px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    /* font-weight: bolder; */
+}
+
+::placeholder {
+    color: white;
+}
+
+.search-bar button img {
+    width: 40px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 5%;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/*! TODAY'S FEATURED */
+
+/*? background dasar total */
+.todayFeature {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Image/TodayFeautreBackground.svg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.todayFeature a,
+p {
+    color: #273F31;
+}
+
+/*? Baris */
+.satu_baris {
+    /* width: 90%;
+    margin: auto; */
+    /* display: flex; */
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding: 5px 2%; */
+}
+
+.satu_baris img {
+    width: 900px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.gambarToday {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1);
+}
+
+.gambarToday img {
+    cursor: pointer;
+    display: block;
+    /* width: 100%; */
+    border-radius: 5px;
+}
+
+.gambarToday:hover {
+   transform: scale(1.05);
+   z-index: 2;
+}
+
+.listFeatured ul {
+    display: flex;
+}
+
+.listFeatured {
+    flex: 1;
+    text-align: center;
+}
+
+.listFeatured ul,
+li {
+    list-style: none;
+    position: relative;
+}
+
+.judulToday {
+    padding-top: 250px;
+}
+
+.judulToday h1 {
+    font-size: 70px;
+}
+
+.listTambahan {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    text-align: justify;
+}
+
+.judulArtikelToday {
+    padding-bottom: 30px;
+}
+
+/*! DID YOU KNOW */
+.didYouKnow {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #273F31;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.didYouKnow h1 {
+    color: white;
+}
+
+.kontenAll {
+    padding: 5%;
+}
+
+.kontenAll h1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+.gambar ul {
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.box {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1);
+}
+
+.box img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box:hover {
+   transform: scale(1.05);
+   z-index: 2;
+}
+
+.swipeLeft {
+    padding-top: 10%;
+    cursor: pointer;
+}
+
+.swipeRight {
+    padding-top: 10%;
+    cursor: pointer;
+}
+
+/*! SECTION POMODORO TIMER */
+.pomodoroTimer {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Image/pomodoroBackgroundHome2.svg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.barisPomo {
+    padding: 5%;
+}
+
+.cabangAwal img {
+    width: 700px;
+    text-align: center;
+}
+
+.cabangAwal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cabangKiri ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cabangKanan ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 100px; */
+    text-align: right;
+    transition: 1s;
+}
+
+.cabangKanan h1 {
+    color: #273F31;
+    font-size: 50px;
+    text-align: right;
+    padding-top: 100px;
+}
+
+.cabangKiri h1 {
+    color: #273F31;
+    font-size: 70px;
+    text-align: center;
+}
+
+.tryIt {
+    cursor: pointer;
+}
+
+.tryIt {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, -1);
+}
+
+.tryIt img {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tryIt:hover {
+   transform: scale(1.05);
+   z-index: 2;
+}
+
+/* !FOOTER */
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: red;
+    color: white;
+}
+
+.fa-reddit {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("Image/FooterBG.png");
+    background-repeat: repeat-x;
+    /* background-color: #718B73; */
+}
+
+footer .col img {
+    width: 100px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #000000;
+
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}

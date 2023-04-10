@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ! HEADER */
+/*? Navigasi Bar */
+nav {
+    display: flex;
+    padding: 5px 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #718B73;
+}
+
+nav img {
+    width: 30px;
+    text-align: center;
+}
+
+.nav_links {
+    /* display: flex; */
+    flex: 1;
+    text-align: left;
+}
+
+.nav_links ul,
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+
+.nav_links ul,
+li,
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_links ul li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #374C3B;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links ul li:hover::after {
+    width: 100%;
+}
+
+.nav_links2 ul li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #374C3B;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav_links2 ul li:hover::after {
+    width: 100%;
+}
+
+/* !SECTION TIMER */
+.Timer {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("Image/pomodoroBackgroundHome2.svg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.overallTimer {
+    padding: 5%;
+}
+
+.overallTimer h1 {
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.containerTimer {
+    width: 70%;
+    background-color: #89A18B;
+    margin: auto;
+    border-radius: 80px;
+}
+
+.box {
+    padding: 3%;
+}
+
+.containerTimer ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cabangKanan {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabang1 {
+    cursor: pointer;
+}
+
+.cabang2 {
+    cursor: pointer;
+}
+
+/* ! SHOP POMODORO */
+
+.Shop {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #89A18B;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.overallShop {
+    padding: 5%;
+    text-align: center;
+}
+
+.Atas h1 {
+    font-size: 60px;
+}
+
+.Atas {
+    padding-bottom: 60px;
+}
+
+.Atas img {
+    width: 70%;
+}
+
+.dalem {
+    width: 70%;
+    background-color: #B5C7BB;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.barisAtas {
+    padding: 3%;
+    cursor: pointer;
+}
+
+.barisBawah {
+    padding: 3%;
+    cursor: pointer;
+
+}
+
+/* !ABOUT POMODORO */
+
+.About {
+    min-height: 40vh;
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.kontenAbout {
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+
+}
+
+.atas h1 {
+    font-size: 60px;
+    padding-bottom: 50px;
+}
+
+.bawah p {
+    text-align: justify;
+}
+
+/* !FOOTER */
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: red;
+    color: white;
+}
+
+.fa-reddit {
+    background-color: red;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("Image/FooterBG.png");
+    background-repeat: repeat-x;
+    /* background-color: #718B73; */
+}
+
+footer .col img {
+    width: 100px;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #000000;
+
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,374 @@
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#273F31;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:#273F31 ;
+}
+
+h4{
+    font-size: 20px;
+    color:#273F31;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #000000;
+    margin: 15px 0 20px 0;
+
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* !Navigasi Bar */
+header{
+  position: absolute;
+}
+nav {
+    display: flex;
+    padding: 5px 2%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #718B73;
+}
+
+nav img {
+    width: 30px; 
+    text-align: center;
+}
+
+.nav_links {
+    /* display: flex; */
+    flex: 1;
+    text-align: left;
+}
+
+.nav_links ul, li {
+    list-style: none;
+    display: inline-block;
+    padding: 2px 12px;
+    position: relative;
+}
+
+.nav_links ul, li, a {
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
+}
+
+.nav-links ul, li::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #374C3B;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul, li:hover::after {
+    width: 100%;
+}
+
+.header .text-box img{
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.header .logo{
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header{
+  height: 500px;
+  background-image:url("Image/HeaderBG.png");
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.text-box {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 100px;
+  font-style: italic;
+  color: #000000;
+  text-shadow: 10px 10px 10px 50% #000000 ;
+}
+
+.text-box p {
+  margin: 20px 0 40px;
+  font-size: 20px;
+
+}
+
+/*? -----SEARCH BAR-------- */
+.header .container {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding-top: 10px;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+}
+
+.search-bar {
+  border-radius: 5%;
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60;
+  padding: 10px 20 px;
+  backdrop-filter: blur(4px) saturate(180%);
+  right: 0;
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: white;
+  /* font-weight: bolder; */
+}
+
+::placeholder {
+  color: white;
+}
+
+.search-bar button img {
+  width: 40px;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 5%;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#page1{
+    text-align: center;
+}
+
+#page1 img{
+    width: 30%;
+}
+
+.pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#page1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 3px solid #728C73;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0px;
+    transition: 0.8s ease;
+    ;
+}
+
+#page1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.25);
+    
+}
+
+#page1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#page1 .pro .desc{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+#page1 .pro span{
+    color: #B5C7BB ;
+    font-size: 12px;
+    padding: 0px;
+
+}
+
+#page1 .pro .desc h4{
+    text-align: center;
+    padding: 0px;
+    color: #728C73;
+    font-size: 30px;
+    text-shadow: 5px 5px 3px #d9d9d9;
+}
+
+#page1 .pro .desc #ilmiah{
+    font-size: 18px;
+}
+
+#page1 .pro .desc .btn-info{
+    text-align: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 9px;
+    font-weight: 500;
+    background-color: #728C73;
+    border: 3px;
+}
+
+.pagination{
+  top: 0%;
+  text-align: center;
+}
+
+
+.pagination a{
+
+  text-decoration: none;
+  background-color: #273F31;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube{
+    background: red;
+    color: white;
+  }
+
+  .fa-reddit{
+    background-color: red;
+    color: white;
+  }
+
+  footer{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("Image/FooterBG.png");
+    background-repeat: repeat-x;
+    /* background-color: #718B73; */
+  }
+
+  footer .col img{
+    width: 100px;
+  }
+
+  footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  footer .logo{
+    margin-bottom: 30px;
+  }
+
+  footer h4{
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: #000000;
+
+  }
+
+  footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+  }
+
+  footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+  }
+
+  footer .copyright{
+    width: 100%;
+    text-align: center;
+  }

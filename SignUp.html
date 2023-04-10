@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="PageWoodPedia.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>WoodPedia</title>
+</head>
+<body>
+    <div class="content">
+
+    <!-- Page WoodPedia -->
+    <section class="header">
+        <nav>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="HomePage1.html"><img class="logo" src="Image/LogoRill.svg" alt="logoWoodLogy"></a></li>
+                    <li><a href="WoodPedia.html">WOODPEDIA</a></li>
+                    <li><a href="WoodTalk.html">WOODTALK</a></li>
+                    <li><a href="PomodoroWoody.html">POMODOROWOODY</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="signIn">
+                    <li><a href="LoginPage.html">SIGN IN</a></li>
+                    <li><a href="SignUp.html">SIGN UP</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="sign-up">
+        <img src="Image/REGISTER.png" alt="">
+    </section>
+
+    <!-- Footer -->
+    <section>
+
+        <footer class = "section-p1">
+            <div class="col">
+                <img class="logo" src="Image/Logo2.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address: </strong> Jalan Sigura-gura Malang No. 99</p>
+                <p><strong>Phone: </strong> +62 812-3456-7890</p>
+                <p><strong>Hours: </strong> 08.00 - 20.00, Mon - Sat</p>
+                <div class ="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-reddit"></a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#"> About Us</a>
+                <a href="#"> Delivery Information</a>
+                <a href="#"> Privacy Policy</a>
+                <a href="#"> Terms & Conditions</a>
+                <a href="#"> Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#"> Sign In</a>
+                <a href="#"> Book Mark</a>
+                <a href="#"> Favorite Page</a>
+                <a href="#"> My Profile</a>
+                <a href="#"> Help</a>
+            </div>
+
+            <div class="col install">
+                <h4>Install Our App</h4>
+                <p>From App Store and Google Play</p>
+                <img src="Image/Download App.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>©2022, Project Akhir Interaksi Manusia dan Komputer</p>
+            </div>
+        </footer>
+    </section>
+
+    </div>
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+       
+        SmallImg[0].onClick = function(){
+            MainImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onClick = function(){
+            MainImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onClick = function(){
+            MainImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onClick = function(){
+            MainImg.src = SmallImg[3].src;
+        }
+    
+        // SmallImg[0].onClick = function(){
+        //     buffer = MainImg.src;
+        //     MainImg.src = SmallImg[0].src;
+        //     SmallImg[0].src = buffer;
+        // }
+        // SmallImg[1].onClick = function(){
+        //     buffer = MainImg.src;
+        //     MainImg.src = SmallImg[1].src;
+        //     SmallImg[1].src = buffer;
+        // }
+        // SmallImg[2].onClick = function(){
+        //     buffer = MainImg.src;
+        //     MainImg.src = SmallImg[2].src;
+        //     SmallImg[2].src = buffer;
+        // }
+        // SmallImg[3].onClick = function(){
+        //     buffer = MainImg.src;
+        //     MainImg.src = SmallImg[3].src;
+        //     SmallImg[3].src = buffer;
+        // }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
